@@ -22,7 +22,7 @@ db.products.find({_id:Objectid("64ec77a629a71b52c2b6306b")}).
 forEach(function(prod){print("products.product_name,"+prod.product_name,"products.product_material:"+prod.product_material)})
 
 8.Find all products which contain the value of soft in product material 
-db.products,find({product_material:"Soft"})
+db.products.find({product_material:"Soft"})
 
 9.Find products which contain product color indigo  and product price 492.00
 db.products.find({$or:[{product_color:'indigo'},{product_price:492.00}]})
